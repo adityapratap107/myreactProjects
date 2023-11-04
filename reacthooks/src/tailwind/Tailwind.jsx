@@ -14,4 +14,4 @@ function Tailwind() {
   )
 }
 
-export default Tailwind
+export default Tailwind;

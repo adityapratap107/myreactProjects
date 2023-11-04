@@ -5,11 +5,13 @@ import './App.css'
 import Tailwind from './tailwind/Tailwind'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+
 
   return (
     <>
-      <div>
+      <div style={{backgroundColor: 'white'}}>
         <h1>count {count}</h1>
       </div>
       <div className="card">
@@ -27,7 +29,7 @@ function App() {
          Add Value
         </button>
         <button onClick={() => {
-          if(count > 0) {
+          if(count > 0){
             setCount((count) => count - 1)
           }
         }}>
@@ -39,9 +41,27 @@ function App() {
 
 
 
-    <Tailwind/>
+    {/* <Tailwind/> */}
     </>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if(count > 0) {
+//   setCount((count) => count - 1)
+// }

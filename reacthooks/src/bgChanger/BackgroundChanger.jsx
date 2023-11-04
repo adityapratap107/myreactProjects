@@ -18,4 +18,4 @@ function BackgroundChanger() {
   )
 }
 
-export default BackgroundChanger
+export default BackgroundChanger;
