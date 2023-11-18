@@ -6,7 +6,6 @@ const PasswordGenerator = () => {
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("");
   //useRef hook
-
   const passwordRef = useRef(null)
   const passwordGenerate = useCallback(() => {
     let pass = "";
