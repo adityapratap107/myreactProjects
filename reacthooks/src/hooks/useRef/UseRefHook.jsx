@@ -11,7 +11,7 @@ const UseRefHook = () => {
     console.log('useref line 10', count);
     // useEffect(() => {
     //     setCount(count + 1)
-    // })
+    // },[])
     useEffect(() => {
         count.current = count.current + 1;
     })
@@ -26,6 +26,7 @@ const UseRefHook = () => {
         <div style={{ backgroundColor: "white", height: "100vh" }}>
             <input ref={inputRef} type="text" value={myData} onChange={(e) => setMyData(e.target.value)} />
             <p>The number of times render: {count.current}</p>
+            {/* <p>The number of times render: {count}</p> */}
             <br />
             <button
         className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"

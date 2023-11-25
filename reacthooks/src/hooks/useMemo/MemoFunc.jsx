@@ -14,11 +14,11 @@ const MemoFunc = () => {
   };
 
   // without useMemo
-  // const checkData = countNumber(myNum);
+  const checkData = countNumber(myNum);
 
-  const checkData = useMemo(() => {
-    return countNumber(myNum);
-  }, [myNum])
+  // const checkData = useMemo(() => {
+  //   return countNumber(myNum);
+  // }, [myNum])
 
   return (
     <div style={{ backgroundColor: "white", height: "100vh" }}>

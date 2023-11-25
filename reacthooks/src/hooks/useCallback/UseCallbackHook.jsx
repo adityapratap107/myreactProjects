@@ -9,9 +9,17 @@ export const UseCallbackHook = () => {
     const onIncrementPress = () => {
         setCounter(prev => prev + 1)
     }
+    // const addTodo = useCallback(() => {
+    //     setTodo(prev => [...prev, 'new todo'])
+    // }, [todo])
+
     const addTodo = useCallback(() => {
-        setTodo(prev => [...prev, 'new todo'])
+      setTodo(prev => [...prev, 'new todo'])
     }, [todo])
+
+    // const addTodo = () => {
+    //   setTodo(prev => [...prev, 'new todo'])
+    // }
   return (
     <div style={{backgroundColor: 'white', height: '100vh',}}>
         <div>Count: {counter}</div>
