@@ -16,7 +16,7 @@ function Login() {
         <h2>Login</h2>
         <input value={username} onChange={(event) => setUsername(event.target.value)} type={'text'} placeholder="username"/> {"  "}
         <input value={password} onChange={(event) => setPassword(event.target.value)}  type={'text'} placeholder="password"/>
-        <button onClick={handleSubmit}>Submit</button>
+        <button onClick={handleSubmit}>Submit </button>
     </div>
   )
 }
