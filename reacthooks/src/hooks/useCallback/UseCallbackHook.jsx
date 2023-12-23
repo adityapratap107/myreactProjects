@@ -14,7 +14,7 @@ export const UseCallbackHook = () => {
     // }, [todo])
 
     const addTodo = useCallback(() => {
-      setTodo(prev => [...prev, 'new todo'])
+      setTodo(prev => [...prev, 'new todo']);
     }, [todo])
 
     // const addTodo = () => {
